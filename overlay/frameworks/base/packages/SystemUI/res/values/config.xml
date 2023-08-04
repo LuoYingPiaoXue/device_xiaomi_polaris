@@ -33,5 +33,7 @@
 
     <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
     <dimen name="config_rounded_mask_size">50px</dimen>
+
+    <dimen name="status_bar_padding_start">12dp</dimen>
 </resources>
 
