@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_polaris.mk
+    $(LOCAL_DIR)/arrow_polaris.mk
