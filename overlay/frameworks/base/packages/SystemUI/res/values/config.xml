@@ -35,6 +35,6 @@
     <dimen name="config_rounded_mask_size">50px</dimen>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">14dp</dimen>
+    <dimen name="status_bar_padding_start">16dp</dimen>
 </resources>
 
