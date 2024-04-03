@@ -33,12 +33,6 @@
     <!-- Whether to spoof device as Pixel XL for Google Photos -->
     <bool name="config_spoofGooglePhotos">true</bool>
 
-    <!-- Default value for proximity check on screen wake
-     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
-    <bool name="config_proximityCheckOnWake">true</bool>
-    <integer name="config_proximityCheckTimeout">250</integer>
-    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
-
     <!-- Parallel space max count. Should overlay according to device
          performance. -->
     <integer name="config_parallelSpaceMaxCount">3</integer>

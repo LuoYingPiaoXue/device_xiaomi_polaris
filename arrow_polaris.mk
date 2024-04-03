@@ -4,17 +4,24 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit common products
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit device configurations
 $(call inherit-product, device/xiaomi/polaris/device.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit common ArrowOS configurations
+$(call inherit-product, vendor/arrow/config/common.mk)
+
+# Inherit some common ArrowOS stuff.
+ARROW_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
-
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_polaris
@@ -32,3 +39,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT="polaris"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# ArrowOS additions
+DEVICE_MAINTAINER := LuoYingPiaoXue
