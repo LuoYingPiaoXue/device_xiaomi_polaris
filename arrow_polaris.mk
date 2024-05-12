@@ -11,8 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/xiaomi/polaris/device.mk)
 
 # Inherit some common ArrowOS stuff.
+ARROW_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_USES_AOSP_RECOVERY := true
 
 $(call inherit-product, vendor/arrow/config/common.mk)
 
@@ -31,4 +34,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-DEVICE_MAINTAINER := Yestercafe
+DEVICE_MAINTAINER := LuoYingPiaoXue

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-2023 ArrowOS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Whether to cancel fingerprint operation if not idle -->
+    <bool name="config_fpCancelIfNotIdle">true</bool>
+
+    <!-- Build properties from a GMS certified device -->
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>griffin_retcn</item> <!-- Build.PRODUCT -->
+        <item>griffin</item> <!-- Build.DEVICE -->
+        <item>motorola</item> <!-- Build.MANUFACTURER -->
+        <item>motorola</item> <!-- Build.BRAND -->
+        <item>XT1650-05</item> <!-- Build.MODEL -->
+        <item>motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys</item> <!-- Build.FINGERPRINT -->
+        <item>2016-07-01</item> <!-- Build.SECURITY_PATCH -->
+        <item>MCC24.246-37</item> <!-- Build.ID -->
+    </string-array>
+
+    <!-- Whether to spoof device as Pixel XL for Google Photos -->
+    <bool name="config_spoofGooglePhotos">true</bool>
+
+    <!-- Parallel space max count. Should overlay according to device
+         performance. -->
+    <integer name="config_parallelSpaceMaxCount">3</integer>
+
+    <!-- Parallel space whitelist -->
+    <string-array name="config_parallelSpaceWhitelist">
+        <item>com.android.settings</item>                   
+        <item>com.android.documentsui</item>
+        <item>com.android.google.documentsui</item>
+    </string-array>
+
+    <!-- Parallel space blocklist -->
+    <string-array name="config_parallelSpaceBlocklist">
+        <item>com.android.launcher3</item>
+        <item>com.google.android.apps.nexuslauncher</item>
+    </string-array>
+</resources>
